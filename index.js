@@ -40,7 +40,7 @@ const handleOnScroll = (e) => {
   const scrollDelta = e.deltaY || e.wheelDelta;
   const maxDelta = window.innerWidth / 2;
 
-  const percentage = (scrollDelta / maxDelta) * 25,
+  const percentage = (scrollDelta / maxDelta) * 15,
     nextPercentageUnconstrained =
       parseFloat(track.dataset.prevPercentage) + percentage,
     nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
