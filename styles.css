@@ -26,9 +26,7 @@ body {
 
 #image-track > .image:hover {
   filter: grayscale(0%);
-  transform: scale(1.1);
   mask: none;
-  transition: 1s ease;
 }
 
 #image-track {
