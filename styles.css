@@ -9,7 +9,7 @@ body {
     rgb(0, 0, 0),
     rgb(0, 0, 0)
   );
-  animation: gradientAnimation 30s ease infinite;
+  animation: gradientAnimation 9s ease infinite;
 }
 
 #image-track > .image {
@@ -18,15 +18,17 @@ body {
   object-fit: cover;
   object-position: center;
   filter: grayscale(100%);
-  transition: filter 3s ease, transform 3s ease;
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  mask-size: 150%;
+  transition: filter 1s ease, transform 1s ease;
+  mask-image: radial-gradient(circle, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  mask-size: 100%;
   mask-position: center;
 }
 
 #image-track > .image:hover {
   filter: grayscale(0%);
   transform: scale(1.1);
+  mask: none;
+  transition: 1s ease;
 }
 
 #image-track {
